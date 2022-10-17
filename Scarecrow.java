@@ -56,7 +56,7 @@ class Scarecrow {
         if (args.length > 0) { //print out message with banner if one is provided
             myScarecrow.sign = new Banner(args[0]);
         } else { // print out default message if no message was provided
-            myScarecrow.sign = new Banner("It's fall!");
+            myScarecrow.sign = new Banner("It's fall!!");
         };
 
         //display scarecrow
