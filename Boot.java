@@ -1,8 +1,7 @@
 /*
- * Boot class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+ * Prints left and right boots using ASCII art
+ * @param String stores direction of boots
+ * @return left and right boots 
  */
 public class Boot {
   
@@ -14,23 +13,18 @@ public class Boot {
     }
 
     /*
-     * TODO: Modify this method to print ASCII Art Boot
+     * print ASCII Art left and right Boots
      */
     public void display() {
+      String leftBoot = "|_______|";
+      String rightBoot = "          |_______|";
         if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
+          System.out.print(leftBoot);
         } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
-        } else {
+          System.out.print(rightBoot);
+        }
+        else {
           System.out.println("Which boot?");
         }
-    }
-
-    /* main method (for testing) */
-    public static void main(String[] args) {
-        Boot myLeftBoot = new Boot("left");
-        Boot myRightBoot = new Boot("right");
-        myLeftBoot.display();
-        myRightBoot.display();
     }
 }

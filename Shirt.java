@@ -1,21 +1,20 @@
 /*
- * Shirt class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+ * Prints shirt using ASCII art
+ * @param none
+ * @return draws shirt using ASCII art
  */
 public class Shirt {
 
     /*
-     * TODO: Modify this method to print ASCII Art Shirt
+     * print ASCII Art Shirt
      */
     public void display() {
-        System.out.println("Shirt?);
-    }
-
-    /* main method (for testing) */
-    public static void main(String[] args) {
-        Shirt myShirt = new Shirt();
-        myShirt.display();
+        System.out.println("       \\____________/");
+        System.out.println("      /              \\");
+        System.out.println("     /  /|        |\\  \\");
+        System.out.println("    /__/ |        | \\__\\");
+        System.out.println("         |        |");
+        System.out.println("         |        |");
+        System.out.println("         |________|");
     }
 }

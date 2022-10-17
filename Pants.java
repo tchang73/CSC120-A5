@@ -1,21 +1,22 @@
 /*
- * Pants class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+ * Prints pants using ASCII art
+ * @param none
+ * @return draw pants using ASCII art
  */
 public class Pants {
 
     /*
-     * TODO: Modify this method to print ASCII Art Pants
+     * print ASCII Art Pants
      */
     public void display() {
-        System.out.println("Pants?);
-    }
-
-    /* main method (for testing) */
-    public static void main(String[] args) {
-        Pants myPants = new Pants();
-        myPants.display();
+        System.out.println("         __________       ");
+        System.out.println("        /          \\");
+        System.out.println("       /            \\");
+        System.out.println("      /      /\\      \\");
+        System.out.println("     /      /  \\      \\");
+        System.out.println("    /      /    \\      \\");
+        System.out.println("   /      /      \\      \\");
+        System.out.println("  /      /        \\      \\");
+        System.out.println(" /______/          \\______\\");
     }
 }

@@ -1,8 +1,7 @@
 /*
- * Banner class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+ * Prints banner with message using ASCII art
+ * @param string to receive message
+ * @return ASCII art that prints out banner, which resizes based on the message provided
  */
 public class Banner {
     
@@ -15,15 +14,18 @@ public class Banner {
     }
 
     /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
+     * Prints a decorative banner, resized to fit the message
      */
     public void display() {
-        System.out.println(this.message);
-    }
-
-    /* main method (for testing) */
-    public static void main(String[] args) {
-        Banner myBanner = new Banner("Hello world");
-        myBanner.display();
+        String message = "**~~ " + this.message + " ~~**"; //create message
+        for (int i=0; i< message.length(); i++){ //print out "~" according to how long the message is
+            System.out.print("~");
+        }        
+        System.out.println("");
+        System.out.println("**~~ " + this.message + " ~~**"); //print message
+        for (int i=0; i< message.length(); i++){ //print out "~" according to how long the message is
+            System.out.print("~");
+        }
+        System.out.println("");
     }
 }
