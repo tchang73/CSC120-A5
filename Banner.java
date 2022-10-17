@@ -18,12 +18,20 @@ public class Banner {
      */
     public void display() {
         String message = "**~~ " + this.message + " ~~**"; //create message
-        for (int i=0; i< message.length(); i++){ //print out "~" according to how long the message is
+        for (int i=0; i< message.length(); i++){ //print banner decors
             System.out.print("~");
-        }        
+        }
+        System.out.println("");
+        for (int i=0; i<message.length()/2; i++){
+            System.out.print("* ");
+        }       
         System.out.println("");
         System.out.println("**~~ " + this.message + " ~~**"); //print message
-        for (int i=0; i< message.length(); i++){ //print out "~" according to how long the message is
+        for (int i=0; i<message.length()/2; i++){//print banner decors
+            System.out.print("* ");
+        } 
+        System.out.println("");
+        for (int i=0; i< message.length(); i++){ 
             System.out.print("~");
         }
         System.out.println("");
