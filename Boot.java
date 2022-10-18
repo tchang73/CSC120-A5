@@ -4,7 +4,7 @@
  * @return left and right boots 
  */
 public class Boot {
-  
+  /* String to store direction */
     private String direction;
   
     /* Constructor */
