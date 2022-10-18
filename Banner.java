@@ -50,7 +50,7 @@ public class Banner {
     System.out.println("");
     for (int i=0; i< message.length(); i++){ 
        }
-        System.out.println("");
+        System.out.print("");
         System.out.println("    *****");
         System.out.println("      ***");
         System.out.println("       **");
